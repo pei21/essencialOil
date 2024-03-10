@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  line-height: 1.3;
+}
+/* header:start */
+
+.about {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.us h1 {
+  color: #165ac7;
+  font-size: 35px;
+  font-weight: 100;
+}
+#color-difference {
+  color: #e67f7f;
+  font-size: 25px;
+  font-family: "Marcellus";
+}
+.about p {
+  display: none;
+  color: #165ac7;
+  text-align: center;
+  margin: 0 200px;
+}
+/* story:start */
+
+.stories {
+  --gap: 1rem;
+  display: flex;
+  gap: var(--gap);
+  max-width: 1200px;
+  margin-inline: auto; /*left and right margin*/
+}
+.stories > * {
+  flex: 1;
+}
+.clickable {
+  cursor: pointer;
+}
+
+.narrow-stories {
+  margin: 80px auto;
+
+  max-width: 1500px;
+}
+
+.storyContainer {
+  display: grid;
+  flex-direction: row;
+}
+.storyContent {
+  display: grid;
+  grid-auto-columns: 1fr;
+  align-content: center;
+  gap: var(--gap); /* create a gap between two stories*/
+}
+
+/* hidden story styles */
+.hidden-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden-background {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+/* hidden story Styles */
+.hidden-content {
+  width: 70%;
+  max-width: 500px; /* Set your desired maximum width */
+  background-color: #ffffffc8; /* Set your desired background color */
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  text-align: center; /* Center text inside the modal */
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%); /* Center the modal vertically */
+  transition: 1s ease-in-out;
+}
+
+.hidden-content.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+#hiddenContentText h2 {
+  margin: 50px;
+}
+#hiddenContentText {
+  padding: 20px;
+  text-align: center;
+}
+/* Close Button Styles */
+.back {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/* hidde-story:end */
+
+.eachStory {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items along the cross axis (vertically in this case) */
+  text-align: center; /* Center text horizontally */
+  background: #f2f2f2;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 0.5);
+}
+.eachStory h2 {
+  color: #165ac7;
+  margin-bottom: 20px;
+}
+.eachStory p {
+  color: #0c3474;
+  margin: 30px;
+}
+#storyImg {
+  width: 50%;
+  border-radius: 5px;
+  max-width: 100%; /* Ensure the image doesn't exceed its original size */
+  margin-bottom: 30px;
+}
+/* story:end */
+
+/* Social-media-icon;start */
+#icons ul li a {
+  list-style: none;
+}
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* END : Social-media-icon */
+/* START:Footer */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+/* END: Footer */
+
+/* Your existing CSS styles */
